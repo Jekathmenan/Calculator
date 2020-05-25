@@ -1,0 +1,41 @@
+.main-theme
+{
+    -fx-background-color: #313131;
+}
+
+.secondary-theme
+{
+    -fx-background-color: #4f5763;
+}
+
+.output-theme
+{
+    -fx-background-color: #393e46;
+}
+
+.primary-text
+{
+    -fx-font-family: "Bodoni MT";
+    -fx-font-size: 38pt;
+    -fx-text-fill: #6191E5;
+}
+
+
+.button 
+{
+    -fx-cursor: hand;
+    -fx-background-color: #313131;
+    -fx-background-radius: 20;
+    -fx-text-fill: #6191E5;
+    -fx-font-size: 18pt;
+}
+.button:hover 
+{
+    -fx-background-color: #757474;
+    -fx-text-fill: white;
+}
+.button:focus 
+{
+    -fx-background-color: #a72b2b;
+    -fx-text-fill: white;
+}

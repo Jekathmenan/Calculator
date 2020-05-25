@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.m326.simplecalculator.View.View">
+    <stylesheets>
+        <URL value="@view.css" />
+    </stylesheets>
+    
+    <children>
+      <AnchorPane prefHeight="30.0" prefWidth="350.0" styleClass="main-theme" stylesheets="@view.css">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="326.0" layoutY="6.0" onMouseClicked="#exitAction" pickOnBounds="true" preserveRatio="true" styleClass="button">
+               <image>
+                  <Image url="@../Images/Element%204Exit.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="294.0" layoutY="6.0" onMouseClicked="#minimizeAction" pickOnBounds="true" preserveRatio="true" styleClass="button">
+               <image>
+                  <Image url="@../Images/Element%201Minimize.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="30.0" prefHeight="100.0" prefWidth="350.0" styleClass="output-theme" stylesheets="@view.css">
+         <children>
+            <Label fx:id="lblOutput" alignment="CENTER_RIGHT" layoutX="2.0" layoutY="5.0" prefHeight="100.0" prefWidth="350.0" styleClass="primary-text" stylesheets="@calculatorview.css" text="0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Bodoni MT" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="240.0" prefHeight="350.0" prefWidth="350.0" styleClass="output-theme" stylesheets="@view.css" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <Button layoutX="89.0" layoutY="285.0" mnemonicParsing="false" onAction="#zeroAction" prefHeight="51.0" prefWidth="60.0" text="0" />
+            <Button alignment="CENTER" layoutX="165.0" layoutY="285.0" mnemonicParsing="false" onAction="#dotAction" prefHeight="40.0" prefWidth="60.0" text="." />
+            <Button layoutX="15.0" layoutY="218.0" mnemonicParsing="false" onAction="#oneAction" prefHeight="40.0" prefWidth="60.0" text="1" />
+            <Button layoutX="15.0" layoutY="151.0" mnemonicParsing="false" onAction="#fourAction" prefHeight="40.0" prefWidth="60.0" text="4" />
+            <Button layoutX="90.0" layoutY="218.0" mnemonicParsing="false" onAction="#twoAction" prefHeight="40.0" prefWidth="60.0" text="2" />
+            <Button layoutX="165.0" layoutY="151.0" mnemonicParsing="false" onAction="#sixAction" prefHeight="40.0" prefWidth="60.0" text="6" />
+            <Button layoutX="250.0" layoutY="151.0" mnemonicParsing="false" onAction="#minusAction" prefHeight="40.0" prefWidth="85.0" text="-" />
+            <Button layoutX="250.0" layoutY="218.0" mnemonicParsing="false" onAction="#plusAction" prefHeight="40.0" prefWidth="85.0" text="+" />
+            <Button layoutX="250.0" layoutY="285.0" mnemonicParsing="false" onAction="#equalsAction" prefHeight="35.0" prefWidth="85.0" text="=" />
+            <Button layoutX="90.0" layoutY="151.0" mnemonicParsing="false" onAction="#fiveAction" prefHeight="40.0" prefWidth="60.0" text="5" />
+            <Button layoutX="165.0" layoutY="218.0" mnemonicParsing="false" onAction="#threeAction" prefHeight="40.0" prefWidth="60.0" text="3" />
+            <Button alignment="CENTER" layoutX="250.0" layoutY="84.0" mnemonicParsing="false" onAction="#multiAction" prefHeight="40.0" prefWidth="85.0" text="*" />
+            <Button layoutX="165.0" layoutY="84.0" mnemonicParsing="false" onAction="#nineAction" prefHeight="40.0" prefWidth="60.0" text="9" />
+            <Button layoutX="90.0" layoutY="84.0" mnemonicParsing="false" onAction="#eightAction" prefHeight="40.0" prefWidth="60.0" text="8" />
+            <Button layoutX="15.0" layoutY="84.0" mnemonicParsing="false" onAction="#sevenAction" prefHeight="40.0" prefWidth="60.0" text="7" />
+            <Button layoutX="250.0" layoutY="14.0" mnemonicParsing="false" onAction="#divideAction" prefHeight="40.0" prefWidth="85.0" text="/" />
+            <Button layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#moduloAction" prefHeight="40.0" prefWidth="60.0" text="M" />
+            <Button layoutX="90.0" layoutY="14.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="40.0" prefWidth="135.0" text="CE" />
+            <Button layoutX="15.0" layoutY="285.0" mnemonicParsing="false" onAction="#plusMinusAction" prefHeight="40.0" prefWidth="60.0" text="+-" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
